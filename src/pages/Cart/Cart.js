@@ -1,15 +1,17 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 
-const Shop = () => {
+const Cart = () => {
   return (
     <div className="App">
       <Navbar />
       <div className="Content">
-        Shop
+        <div className="Cart">
+
+        </div>
       </div>
     </div>
   );
 };
 
-export default Shop;
+export default Cart;
