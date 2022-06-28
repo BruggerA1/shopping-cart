@@ -4,7 +4,6 @@ const importAVIF = () => {
 
 	// get array of file names matching context search.
 	const avifPathArr = context.keys();
-
 	// natrual sort the file names  
 	const avifArr = naturalSort(avifPathArr).map(context);
 
