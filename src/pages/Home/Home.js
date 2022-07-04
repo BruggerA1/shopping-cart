@@ -4,7 +4,6 @@ import './Home.scss';
 import { Catalog } from "../../objects/Catalog";
 
 const Home = () => {
-  console.log(Catalog.concentrates[2])
   return (
     <div className="App">
       <Navbar />
