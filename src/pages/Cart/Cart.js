@@ -7,7 +7,7 @@ const Cart = () => {
       <Navbar />
       <div className="Content">
         <div className="Cart">
-
+          Cart
         </div>
       </div>
     </div>

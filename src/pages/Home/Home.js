@@ -10,7 +10,7 @@ const Home = () => {
       <Navbar />
       <div className="Content">
         <div className="Home">
-          <img src={Catalog.concentrates[2].image}/>
+          Home
         </div>
       </div>
     </div>

@@ -1,0 +1,13 @@
+.Shop {
+
+	.itemGrid {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+	}
+	.thumbnail {
+		height: 100px;
+		width: 100px;
+	}
+}
