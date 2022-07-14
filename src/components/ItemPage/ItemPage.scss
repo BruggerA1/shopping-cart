@@ -1,0 +1,25 @@
+.ItemPage {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.backButton {
+		position: fixed;
+		bottom: 0;
+		margin-bottom: 50px;
+	}
+
+	.thumbnail {
+		height: 250px;
+		width: 250px;
+	}
+	
+	.Navbar {
+		position: fixed;
+		top: 0;
+		width: 100vw;
+	}
+
+}
