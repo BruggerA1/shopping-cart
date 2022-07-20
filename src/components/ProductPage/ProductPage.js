@@ -8,15 +8,15 @@ import { Link } from "react-router-dom";
 const ProductPage = (props) => {
 	let { id } = useParams();
 	const category = (id == null) ? props.category : id;
+	const products = Object.values(Catalog[category]);
 	const navBar = (() => {
 		if (id != null)
-		return (<Navbar/>)
+			return (<Navbar />)
 	})();
 	const backButton = (() => {
-		if(id != null)  
-		return (<Link to={'/shop'}>Back</Link>)
+		if (id != null)
+			return (<Link to={'/shop'}>Back</Link>)
 	})();
-
 
 	return (
 		<div>
@@ -25,15 +25,15 @@ const ProductPage = (props) => {
 				<h1>{category}</h1>
 				{backButton}
 				<div className="itemGrid">
-				{Object.values(Catalog[category]).map(item => {
-					return (
-						<Link to={`/shop/${category}/${item.name}`}>
-							<h3>{item.name}</h3>
-							<img className="thumbnail" src={item.image}/>
-							<h5>{item.price}</h5>
-						</Link>
-					);
-				})};
+					{products.map(item => {
+						return (
+							<Link to={`/shop/${category}/${item.name}`}>
+								<h3>{item.name}</h3>
+								<img className="thumbnail" src={item.image} />
+								<h5>{item.price}</h5>
+							</Link>
+						);
+					})}
 				</div>
 			</div>
 		</div>

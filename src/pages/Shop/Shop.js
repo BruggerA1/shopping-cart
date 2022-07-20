@@ -12,11 +12,11 @@ const Shop = () => {
       <Navbar />
       <div className="Content">
         <div className="Shop">
-          <Sidebar/>
+          <Sidebar />
           <div className="Content">
-            <ProductPage category={'Flower'}/>
-            <ProductPage category={'Concentrate'}/>
-            <ProductPage category={'Vape'}/>
+            <ProductPage category={'Flower'} />
+            <ProductPage category={'Concentrate'} />
+            <ProductPage category={'Vape'} />
 
           </div>
           {/* <ProductPage category={'Flower'}/>

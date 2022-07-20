@@ -8,13 +8,13 @@ import './ItemPage.scss';
 const ItemPage = () => {
 	const { cat, id } = useParams();
 	const category = Object.values(Catalog[cat]);
-	const product = category.filter(item => item.name == id)[0];
+	const product = category.find(item => item.name == id);
 	const item = Product(product.name, product.price, product.category, product.image);
 	return (
 		<div className="ItemPage">
-			<Navbar/>
+			<Navbar />
 			<h1>{item.name}</h1>
-			<img className="thumbnail" src={item.image}/>
+			<img className="thumbnail" src={item.image} />
 			<h2>{item.price}</h2>
 			<Link className="backButton" to={`/shop/${cat}`}>Back</Link>
 		</div>

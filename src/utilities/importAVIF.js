@@ -13,8 +13,8 @@ const importAVIF = () => {
 const naturalSort = (Array) => {
 	// sort alphabetically & atomically. 
 	// (a01, a02, b01, ..., b10, z01, z02)
-	return Array.sort((a, b) => 
-		a.localeCompare(b, navigator.language, {numeric: true})
+	return Array.sort((a, b) =>
+		a.localeCompare(b, navigator.language, { numeric: true })
 	);
 };
 

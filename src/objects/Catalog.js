@@ -9,13 +9,13 @@ export const Catalog = (() => {
 			2: image[1],
 			3: image[2],
 		},
-		Flower:   {
+		Flower: {
 			1: image[3],
 			2: image[4],
 			3: image[5],
 		},
 
-		Vape:  {
+		Vape: {
 			1: image[6],
 			2: image[7],
 			3: image[8],
