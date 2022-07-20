@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const ProductPage = (props) => {
 	let { id } = useParams();
 	const category = (id == null) ? props.category : id;
-	const products = Object.values(Catalog[category]);
+	const products = Catalog[category];
 	const navBar = (() => {
 		if (id != null)
 			return (<Navbar />)

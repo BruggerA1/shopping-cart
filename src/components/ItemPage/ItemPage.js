@@ -7,7 +7,7 @@ import './ItemPage.scss';
 
 const ItemPage = () => {
 	const { cat, id } = useParams();
-	const category = Object.values(Catalog[cat]);
+	const category = Catalog[cat];
 	const product = category.find(item => item.name == id);
 	const item = Product(product.name, product.price, product.category, product.image);
 	return (
